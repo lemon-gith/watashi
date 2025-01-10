@@ -1,0 +1,17 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  /* There should be no un-elemented text */
+  color: light-dark(#ff0000, #ff0000);
+  background-color: light-dark(#a9e1eb, #1e293b);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: light-dark(#1a1a1a, #d1d1d1);
+}
+
+p {
+  color: light-dark(#4a4a4a, #c1c1c1);
+}
