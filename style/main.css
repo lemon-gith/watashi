@@ -55,9 +55,19 @@ a {
   text-decoration-line: none;
 }
 
+nav a.current-page {
+  color: light-dark(#d16900, #43cf6d);
+  font-weight: 600;
+}
+
 a:hover {
   color: #008cff;
   text-decoration-line: underline;
+}
+
+nav a.external-link:hover {
+  color: var(--primary-text);
+  text-decoration-line: none;
 }
 
 table.projects {
