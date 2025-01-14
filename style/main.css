@@ -68,6 +68,10 @@ nav label:hover {
     display: none;
   }
 
+  input[type="checkbox"]:checked~ul {
+    margin-left: -10%;
+  }
+
   input[type="checkbox"]:not(:checked)~ul {
     display: none;
   }
