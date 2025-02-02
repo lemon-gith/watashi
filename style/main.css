@@ -91,6 +91,7 @@ nav div.icon-links a:hover {
 }
 
 @media (max-width: 600px) {
+  /* Borrowed ideas from https://threkk.medium.com/how-to-make-a-css-only-hamburger-menu-f7ad41e13399 (Accessed: 13-01-2025) for the no-JS hamburger menu */
   input[type="checkbox"]:checked#menu+label[for="menu"] {
     display: none;
   }
