@@ -18,8 +18,14 @@ h1, h2, h3, h4, h5, h6 {
   color: light-dark(#1a1a1a, #d1d1d1);
 }
 
-p {
+p, main li {
   color: var(--primary-text);
+  font-size: 14pt;
+  text-align: justify;
+}
+
+.labelled {
+  color: light-dark(#39847a, #a9e1eb);
 }
 
 nav {
@@ -61,6 +67,27 @@ nav label {
 nav label:hover {
   color: #008cff;
   cursor: pointer;
+}
+
+a {
+  color: light-dark(#225782, #c0b5cf);
+  text-decoration-line: none;
+}
+
+nav a.current-page {
+  color: light-dark(#218f42, #43cf6d);
+  font-weight: 600;
+}
+
+a:hover {
+  color: #008cff;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+nav div.icon-links a:hover {
+  color: var(--primary-text);
+  text-decoration-line: none;
 }
 
 @media (max-width: 600px) {
@@ -108,27 +135,6 @@ nav label:hover {
     text-align: left;
     padding: 0.5rem;
   }
-}
-
-a {
-  color: var(--primary-text);
-  text-decoration-line: none;
-}
-
-nav a.current-page {
-  color: light-dark(#d16900, #43cf6d);
-  font-weight: 600;
-}
-
-a:hover {
-  color: #008cff;
-  cursor: pointer;
-  text-decoration-line: underline;
-}
-
-nav a.external-link:hover {
-  color: var(--primary-text);
-  text-decoration-line: none;
 }
 
 table.projects {
