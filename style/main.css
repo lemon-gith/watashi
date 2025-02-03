@@ -139,6 +139,20 @@ th#links-header {
   left: 76.5%
 }
 
+.about-table-section {
+  padding: 0 5%;
+}
+
+.about-table-section table td {
+  padding: 0 0 1rem 1rem;
+}
+
+table.about-table {
+  display: block;
+  overflow-x: auto;
+  /* white-space: nowrap; */
+}
+
 @media (max-width: 600px) {
   /* Borrowed ideas from https://threkk.medium.com/how-to-make-a-css-only-hamburger-menu-f7ad41e13399 (Accessed: 13-01-2025) for the no-JS hamburger menu */
   input[type="checkbox"]:checked#menu+label[for="menu"] {
@@ -200,6 +214,22 @@ th#links-header {
   th#links-header {
     left: 68.5%
   }
+
+  /* sideways scrollable table technique adapted from: https://stackoverflow.com/questions/5533636/add-a-horizontal-scrollbar-to-an-html-table */
+
+  table.about-table tr {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  table.about-table tr td {
+    text-align: center;
+    width: 80%;
+    padding: 12px 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 table.projects {
@@ -217,6 +247,7 @@ table.projects tr:hover {
 
 td {
   padding: 0 0 0 10px;
+  color: var(--primary-text);
 }
 td p {
   text-align: left;
