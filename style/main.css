@@ -254,7 +254,7 @@ td p {
 }
 
 table.projects tbody tr td {
-  vertical-align: top;
+  vertical-align: center;
 }
 
 table.project a {
