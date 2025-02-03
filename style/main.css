@@ -1,12 +1,13 @@
 :root {
   color-scheme: light dark;
   --primary-text: light-dark(#4a4a4a, #c1c1c1);
+  --bg-colour: light-dark(#a9e1eb, #1e293b)
 }
 
 body {
   /* There should be no un-elemented text */
-  color: light-dark(#ff0000, #ff0000);
-  background-color: light-dark(#a9e1eb, #1e293b);
+  color: #ff0000;
+  background-color: var(--bg-colour);
 }
 
 main {
@@ -90,6 +91,36 @@ nav div.icon-links a:hover {
   text-decoration-line: none;
 }
 
+table.projects tbody tr th {
+  position: fixed;
+}
+
+th#date-header {
+  top: 2rem;
+  height: 5rem;
+  width: 100%;
+  align-content: end;
+}
+
+th#project-header {
+  top: 2rem;
+  height: 5rem;
+  align-content: end;
+  left: 23.3%
+}
+th#tooling-header {
+  top: 2rem;
+  height: 5rem;
+  align-content: end;
+  left: 50%
+}
+th#links-header {
+  top: 2rem;
+  height: 5rem;
+  align-content: end;
+  left: 76.5%
+}
+
 @media (max-width: 600px) {
   /* Borrowed ideas from https://threkk.medium.com/how-to-make-a-css-only-hamburger-menu-f7ad41e13399 (Accessed: 13-01-2025) for the no-JS hamburger menu */
   input[type="checkbox"]:checked#menu+label[for="menu"] {
@@ -136,6 +167,17 @@ nav div.icon-links a:hover {
     text-align: left;
     padding: 0.5rem;
   }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  th#project-header {
+    left: 32%
+  }
+  th#links-header {
+    left: 68.5%
+  }
 }
 
 table.projects {
@@ -143,14 +185,33 @@ table.projects {
   border-collapse: collapse;
 }
 
+table.projects tr:hover {
+  background-color: light-dark(#83d38b, #4b6252);
+}
+
+#table-header:hover {
+  background-color: var(--bg-colour);
+}
+
 td {
-  padding: 0 10px;
+  padding: 0 0 0 10px;
+}
+td p {
+  text-align: left;
 }
 
 table.projects tbody tr td {
   vertical-align: top;
 }
 
-div.icon-links a {
-  vertical-align: middle;
+table.project a {
+  color: var(--primary-text);
+}
+
+th {
+  padding: 10px;
+  text-align: left;
+  color: var(--primary-text);
+  font-size: x-large;
+  background-color: light-dark(#a9e1eb, #1e293b);
 }
