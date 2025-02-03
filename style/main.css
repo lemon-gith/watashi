@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 6rem;
   padding: 0 5%;
 }
 
@@ -23,6 +23,14 @@ p, main li {
   color: var(--primary-text);
   font-size: 14pt;
   text-align: justify;
+}
+
+main li {
+  margin: 0.5rem 0;
+}
+
+main figcaption {
+  color: var(--primary-text);
 }
 
 .labelled {
@@ -71,7 +79,7 @@ nav label:hover {
 }
 
 a {
-  color: light-dark(#225782, #c0b5cf);
+  color: light-dark(#225782, #6cb0bb);
   text-decoration-line: none;
 }
 
@@ -86,7 +94,11 @@ a:hover {
   text-decoration-line: underline;
 }
 
-nav div.icon-links a:hover {
+div.icon-links a {
+  vertical-align: middle;
+}
+
+div.icon-links a:hover {
   color: var(--primary-text);
   text-decoration-line: none;
 }
