@@ -40,7 +40,7 @@ main figcaption {
 }
 
 .labelled {
-  color: light-dark(#39847a, #a9e1eb);
+  color: light-dark(#36776e, #a9e1eb);
 }
 
 nav {
@@ -85,12 +85,12 @@ nav label:hover {
 }
 
 a {
-  color: light-dark(#225782, #6cb0bb);
+  color: light-dark(#11349d, #6cb0bb);
   text-decoration-line: none;
 }
 
 nav a.current-page {
-  color: light-dark(#218f42, #43cf6d);
+  color: light-dark(#11973a, #43cf6d);
   font-weight: 600;
 }
 
