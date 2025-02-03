@@ -12,7 +12,10 @@ body {
 
 main {
   margin-top: 6rem;
-  padding: 0 5%;
+}
+
+.text-container {
+  padding: 0 15%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,6 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 p, main li {
   color: var(--primary-text);
   font-size: 14pt;
+}
+
+p {
   text-align: justify;
 }
 
@@ -178,6 +184,10 @@ th#links-header {
     width: 100%;
     text-align: left;
     padding: 0.5rem;
+  }
+
+  .text-container {
+    padding: 0 5%;
   }
 
   .hide-on-mobile {
