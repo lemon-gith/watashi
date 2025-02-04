@@ -21,6 +21,13 @@ main {
   padding-right: 5%;
 }
 
+main.agribot-project {
+  background: var(--bg-colour);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: light-dark(#1a1a1a, #d1d1d1);
 }
