@@ -5,8 +5,11 @@
 }
 
 body {
-  /* There should be no un-elemented text */
-  color: #ff0000;
+  /* 
+    There should be no un-elemented text
+    Use a less glaring colour than red, for outdated renderers like WeChat browser
+  */
+  color: #7358b8;
   background-color: var(--bg-colour);
 }
 
