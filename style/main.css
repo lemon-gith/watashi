@@ -122,9 +122,68 @@ div.icon-links a:hover {
   text-decoration-line: none;
 }
 
-table.projects tbody tr th {
-  position: fixed;
+td {
+  padding: 0 0 0 10px;
+  color: var(--primary-text);
+
+  p {
+    text-align: left;
+  }
 }
+
+th {
+  padding: 10px;
+  text-align: left;
+  color: var(--primary-text);
+  font-size: x-large;
+  background-color: var(--bg-colour);
+}
+
+
+table.projects {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    position: fixed;
+  }
+  td {
+    vertical-align: center;
+  }
+
+  tr {
+    th:nth-child(1), td:nth-child(1), th:nth-child(4), td:nth-child(4) {
+      width: 20%;
+    }
+    th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
+      width: 30%;
+    }
+
+  }
+  td:nth-child(2) p {
+    color: light-dark(#11349d, #6cb0bb);
+  }
+
+  tr:hover {
+    background-color: light-dark(#83d38b, #4b6252);
+  }
+
+  td:last-child {
+    vertical-align: middle;
+  }
+}
+
+tr#table-header:hover {
+  background-color: var(--bg-colour);
+}
+
+a.projects:hover {
+  text-decoration: none;
+  td p {
+    color: light-dark(#2a8093, #5fb2f6);
+  }
+}
+
 
 th#date-header {
   top: 2rem;
@@ -151,6 +210,7 @@ th#links-header {
   align-content: end;
   left: 76.5%
 }
+
 
 .about-table-section {
   padding: 0 5%;
@@ -246,41 +306,4 @@ table.about-table {
     display: flex;
     flex-direction: column;
   }
-}
-
-table.projects {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table.projects tr:hover {
-  background-color: light-dark(#83d38b, #4b6252);
-}
-
-#table-header:hover {
-  background-color: var(--bg-colour);
-}
-
-td {
-  padding: 0 0 0 10px;
-  color: var(--primary-text);
-}
-td p {
-  text-align: left;
-}
-
-table.projects tbody tr td {
-  vertical-align: center;
-}
-
-table.project a {
-  color: var(--primary-text);
-}
-
-th {
-  padding: 10px;
-  text-align: left;
-  color: var(--primary-text);
-  font-size: x-large;
-  background-color: light-dark(#a9e1eb, #1e293b);
 }
