@@ -37,6 +37,19 @@ main.agribot-project {
   border-radius: 1rem;
 }
 
+main.dtkt-project {
+  background: light-dark(#8ed3b4, #0c0252);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  p {
+    color: light-dark(#0f0f44, #c6ebf9)
+  }
+  hr {
+    border-color: light-dark(#0019a8, #0ea9ec);
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: light-dark(#1a1a1a, #d1d1d1);
 }
