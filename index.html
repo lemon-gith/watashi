@@ -59,24 +59,69 @@
     Welcome to my site!
   </h1>
   <p>
-    I'm Pierce, and if you're thinking, "wow, this website seems pretty basic", that's the goal, for now :)<br>
-    This site is completely written by hand, no frameworks, libraries, nor even any JavaScript, even for the mobile compatibility: to both learn about the way that site data is structured, styled, and rendered, but also to minimise the indirection and bloat. This site loads and renders quickly with no fluff <small>(just as the internet was intended)</small>.
+    I'm Pierce, and this is my very basic website.
+  </p>
+  <p class="aside"><small>
+    Hint: <a>darker blue</a> is for linked text, <span class="labelled" title="Yup, just using the 'title' attribute :)">lighter blue</span> is for annotated text <small>(hover over it to see more details)</small>.
+  </small></p>
+  <p>
+    My goal with this site is to minimise any and all usage of JavaScript, using as much pure HTML & CSS as possible. This first version of my site is written completely by hand, no frameworks, libraries, and of course no JavaScript, even for the mobile compatibility. A bit of a teaching moment for me, so my next site will probably use a framework <small>(this was painful to build :})</small>.
   </p>
   <p>
-    If you're looking for more information about me, and understandably don't want to spend time reading my waffle, please feel free to head straight to my <a href="./about/">About page</a>.
+    If you're looking for more information about me, please feel free to head straight to my <a href="./about/">About page</a>.
+  </p>
+  <h2>
+    What is this?
+  </h2>
+  <p>
+    This is my personal website, the formal one, at least.<br>
+    Currently it's somewhat of a playground for me to learn how browsers and websites work.<br>
+    Of course, I'm aware that doing this without JS is not amazing in and of itself, the engineers behind the systems that enable this are much more incredible; nonetheless, a lot of websites nowadays are becoming JavaScript first, with little concern for those who either have JavaScript disabled or use less powerful devices, just because it's easier.
   </p>
   <p>
-    Admittedly, a part of the reason the site is written in pure HTML & CSS, is to accommodate users that may have JavaScript disabled, since it's not uncommon in the Cyber Security space. I'm also a believer in the idea that the basic functions, e.g. navigation, should work perfectly without JavaScript, and that JavaScript is only there to enhance the experience, rather than to be a pre-requisite.
+    So, at least on my website, I won't force JavaScript on users, but rather make it opt-in. You don't need it, but it can make a couple sparkles here and there for you, if you let it :)
   </p>
   <p>
-    I like a site built with purpose, for a purpose, and not sites filled with colour and animation, looking like an iridescent disco... often at the cost of usability and performance.
+    Some noJS highlights, because they took a bit of thinking:
+  </p>
+  <p>
+    <ul>
+      <li>
+        The page-tracking navbar
+        <ul>
+          <li>No JS reading the URL and annotating the HTML, it's just hard-coded into the page itself, since each page is its own document anyways <small>(would be much easier with a framework...)</small></li>
+        </ul>
+      </li>
+      <li>The <a href="/projects/">frozen header row</a></li>
+      <li>
+        The <a href="/projects/">linked content rows</a>
+        <ul>
+          <li>
+            Linked content rows are usually done via JavaScript and often obscure the URL with "javascript:void(0)", even when it could just be a straight href
+          </li>
+        </ul>
+      </li>
+      <li>
+        The mobile compatibility:
+        <ol>
+          <li>navbar hamburger menu</li>
+          <li><a href="/about/">rotating table</a>, purely using CSS</li>
+        </ol>
+        <ul>
+          <li>
+            These often use JS, serving mobile and desktop with one document. Admittedly, I've chosen to do the same here, but implementing that functionality using CSS.
+          </li>
+        </ul>
+      </li>
+    </ul>
   </p>
   <p>
     <a href="https://bruno-simon.com/" target="_blank" class="labelled" title="Last Accessed: 03-02-2025">Bruno Simon's site</a> is a good counter-example: it couldn't run smoothly on a less powerful device, but perfectly fulfils its purposes of novelty, fun, and showcasing his skills; still, I don't think it's the most usable site, but that's easily overlooked in light of how fun it is to drive the little car around :D
   </p>
   <p>
-    That being said, I'll likely be introducing a framework in the future, to reduce code redundancy and provide a more feature-rich site (v2), while keeping it quite minimal, but for now, it's all hand-made. Though, as you can tell, I'm still quite opinionated.
+    That being said, I'll likely be introducing a framework in the future, to reduce codebase redundancy and provide a more feature-rich site (v2), while keeping it quite minimal, but for now, it's all hand-made. As you can surely tell.
   </p>
+  <hr size="1px">
   <p>
     Greetings, weary traveller, welcome to the Greenhouse. Would you like to take a moment to rest your eyes?
   </p>

@@ -24,6 +24,12 @@ main {
   padding-right: 5%;
 }
 
+.aside {
+  padding: 10px;
+  background: light-dark(#bcdba8, #271841);
+  border-radius: 10px;
+}
+
 main.agribot-project {
   background: var(--bg-colour);
   padding-top: 1rem;
